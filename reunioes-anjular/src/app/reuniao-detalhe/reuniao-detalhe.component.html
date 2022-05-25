@@ -1,0 +1,21 @@
+<h2>Detalhes da Reunião</h2> 
+
+<hr/>
+<div *ngIf="Reuniao">
+  <div>
+    <label><b>Nome </b></label> {{Reuniao.nome}}
+  </div>
+  <div>
+    <label><b> data</b></label> {{Reuniao.data}}
+  </div>
+  <div>
+    <label><b> HR. Inicio</b></label> {{Reuniao.hrInicio}}
+  </div>
+    <div>
+    <label><b> HR. Fim</b></label> {{Reuniao.hrFim}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">lista de reuniões</button><br>
